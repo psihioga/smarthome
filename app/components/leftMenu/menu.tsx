@@ -1,6 +1,6 @@
 import React from 'react' 
 import Image from 'next/image'
-import Verc  from "@/images/vercel.svg";
+import Verc  from "@/icons/vercel.svg";
 
 export type MenuItem= {
     text: string;
