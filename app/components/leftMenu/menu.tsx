@@ -1,10 +1,10 @@
 import React from 'react' 
 import Image from 'next/image'
-import Verc  from "@/icons/vercel.svg";
+
 
 export type MenuItem= {
     text: string;
-    icon?: string;
+    icon?: any;
 }
 
  
@@ -13,9 +13,9 @@ function ListItem(props: {element: MenuItem}) {
     
     return (
         <li >
-            {text}
+            {/* {text} */}
             {props.element?.icon ? <Image alt={text} 
-                src={Verc} width={300} height={300}/> 
+                src={props.element?.icon} width={30} height={30}/> 
                 : null}
         </li>
     )
@@ -30,7 +30,7 @@ export const Menu = (props: {items:MenuItem[]}) => {
     })
 
     return (
-        <div id="nav" className='bg-primary-600 w-20'>
+        <div id="nav" className='bg-primary-600 w-14'>
             <Image src={'/logo.svg'} alt='logo'  width={30} height={30}/>
             <ul >
                 {elements}
