@@ -26,6 +26,6 @@
       "@/icons/*": ["app/images/icons/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "./app/**/*.ts"],
+  "include": [ "./app/lib/optional.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

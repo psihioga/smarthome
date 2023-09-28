@@ -28,3 +28,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.menulist {
+  /* width: 3.5rem; */
+}
+.logo, .menulist_icon{
+  width: auto;
+  height: auto;
+}
+
+.menulist_icon path{
+  fill:aqua
+}
