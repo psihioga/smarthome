@@ -1,10 +1,10 @@
 import { Menu as LeftMenu, MenuItem } from "./components/leftMenu/menu";
 import House  from "@/icons/house.svg";
-// import Environment  from "@/icons/leaf.svg";
-// import energyconsumption  from "@/icons/kettle.svg";
-// import security  from "@/icons/dots.svg";
-// import iotdevices  from "@/icons/lamp.svg";
-// import functionalarea  from "@/icons/bricks.svg";
+import Environment  from "@/icons/leaf.svg";
+import energyconsumption  from "@/icons/kettle.svg";
+import security  from "@/icons/dots.svg";
+import iotdevices  from "@/icons/lamp.svg";
+import functionalarea  from "@/icons/bricks.svg";
 
 const menuItems: MenuItem[] = [
   {
@@ -13,24 +13,24 @@ const menuItems: MenuItem[] = [
   },
   {
     text: "environment",
-    // icon: Environment,
+    icon: Environment,
   },
-  // {
-  //   text: "energy-consumption",
-  //   icon: energyconsumption,
-  // },
-  // {
-  //   text: "security",
-  //   icon: security,
-  // },
-  // {
-  //   text: "iot-devices",
-  //   icon: iotdevices,
-  // },
-  // {
-  //   text: "functional-area",
-  //   icon: functionalarea,
-  // },
+  {
+    text: "energy-consumption",
+    icon: energyconsumption,
+  },
+  {
+    text: "security",
+    icon: security,
+  },
+  {
+    text: "iot-devices",
+    icon: iotdevices,
+  },
+  {
+    text: "functional-area",
+    icon: functionalarea,
+  },
 ];
 
 

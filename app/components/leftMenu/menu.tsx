@@ -1,25 +1,22 @@
 import React from 'react' 
 import  {Build}  from "@/icons/index";
-import Arrow from "@/icons/arrow.svg";
-import Brick from "../../images/icons/bricks.svg";
+
 
 
 export type MenuItem= {
     text: string;
-    icon?: any;
+    icon: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
 }
 
  
 function ListItem(props: {element: MenuItem}) {
     const text = props.element.text;
+    const Icon = props.element.icon;
+
     
     return (
         <li className='menulist_item'>
-            {/* {props.element?.icon ? <Image alt={text} 
-                src={props.element?.icon} width={30} height={30}
-                className='menulist_icon'/> 
-                : text} */}
-                {text}
+           <Icon className='fill-white' />
         </li>
     )
 }
@@ -34,9 +31,7 @@ export const Menu = (props: {items:MenuItem[]}) => {
 
     return (
         <div id="nav" className='h-screen bg-primary-600 flex flex-col flex-wrap items-center'>
-            {/* <Image priority={true}  className='logo' src={'/logo.svg'} alt='logo'  width={30} height={30}/> */}
-            
-            <Build className="fill-primary-600"/>
+            <Build className="fill-white"/>
             <ul className='menulist flex flex-col items-center'>
                 {elements}
             </ul>
