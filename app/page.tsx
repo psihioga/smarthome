@@ -1,3 +1,8 @@
+'use client';
+
+import { useState } from "react";
+
+
 import { Menu as LeftMenu, MenuItem } from "./components/leftMenu/menu";
 import House  from "@/icons/house.svg";
 import Environment  from "@/icons/leaf.svg";
@@ -33,13 +38,19 @@ const menuItems: MenuItem[] = [
   },
 ];
 
+// const activeItem: MenuItem = menuItems[0];
+
 
 
 
 export default function Home() {
+
+  const [activeItem, setActiveItem] = useState(1);
+
+
   return (
     <div className="flex flex-row flex-wrap justify-start items-start">
-      <LeftMenu items={menuItems}/>
+      <LeftMenu items={menuItems} activeItem={activeItem}/>
       <main className="">
         <header>header</header>
         <section id="leftMenu" className="">
